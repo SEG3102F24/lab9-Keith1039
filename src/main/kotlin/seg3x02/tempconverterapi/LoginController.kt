@@ -1,4 +1,4 @@
-package seg3x02.converter
+package seg3x02.tempconverterapi
 
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry
@@ -8,5 +8,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
 class LoginController: WebMvcConfigurer {
     override fun addViewControllers(registry: ViewControllerRegistry) {
         registry.addViewController("/login").setViewName("login")
+        registry.addViewController("/home").setViewName("home")
     }
 }
